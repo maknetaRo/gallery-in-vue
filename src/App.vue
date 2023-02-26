@@ -1,11 +1,22 @@
 <script setup>
 import NavBar from '@/components/NavBar.vue'
-import MainComp from '@/components/MainComp.vue'
+import ImagesList from '@/components/ImagesList.vue'
 </script>
 
 <template>
   <NavBar />
-  <MainComp />
+  <main class="main">
+    <ImagesList />
+  </main>
 </template>
 
-<style scoped></style>
+<style scoped>
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+</style>
